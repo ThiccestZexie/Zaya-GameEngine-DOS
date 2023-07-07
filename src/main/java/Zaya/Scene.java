@@ -33,5 +33,8 @@ public abstract class Scene {
 
     public void init() {
     }
+    public Camera camera(){
+        return this.camera;
+    }
 
 }

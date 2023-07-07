@@ -147,4 +147,8 @@ public class Window {
     public void setB(float b) {
         this.b = b;
     }
+
+    public static Scene getScene(){
+        return get().currentScene;
+    }
 }
