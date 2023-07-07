@@ -155,4 +155,7 @@ public class RenderBatch {
 
     }
 
+    public boolean hasRoom() {
+        return this.hasRoom;
+    }
 }
