@@ -90,10 +90,10 @@ public class LevelEditorScene extends Scene {
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, elementBuffer, GL_STATIC_DRAW); // same ass above but element buffer
 
         // Add the vertex attribute pointers.
-        int positionSize = 3;
-        int colorSize = 4;
-        int uvSize = 2;
-        int vertexSizeBytes = (positionSize + colorSize + uvSize) * Float.BYTES;
+        final int positionSize = 3;
+        final int colorSize = 4;
+        final int uvSize = 2;
+        final int vertexSizeBytes = (positionSize + colorSize + uvSize) * Float.BYTES;
 
         glVertexAttribPointer(0, positionSize, GL_FLOAT, false, vertexSizeBytes, 0);
         glEnableVertexAttribArray(0); // in our default.glsl we point to position 0
@@ -107,8 +107,8 @@ public class LevelEditorScene extends Scene {
 
     @Override
     public void update(float dt) {
-        // camera.position.x -= dt*50.0f;
-        // camera.position.y -= dt* 20.0f;
+         camera.position.x -= dt*50.0f;
+         camera.position.y -= dt* 20.0f;
 
         defaultShader.use();
 

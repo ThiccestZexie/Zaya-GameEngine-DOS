@@ -10,7 +10,6 @@ public abstract class Scene {
     protected List<GameObject> gameObjects = new ArrayList<>();
     public Scene() {
         //it is going to later be the game wrapper
-
     }
 
     public void addGameObjectToScene(GameObject go  ){
